@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root {
+    --background: #181C14;
+    --text: #ECDFCC;
+    --contentBackground: #3C3D37;
+    --other-content: #697565;
+    --neutralShade: #B0B3A1;
+    --lightContentBackground: #4B4D47;
+    --accentColor: #4CAF50;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    height: auto;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--contentBackground);
+    border-radius: 5px;
+    font-size: 1.3rem;
+}
+
+form h2{
+    font-size: 2.5rem;
+    color: var(--accentColor);
+}
+
+form div{
+    width: 100%;
+}
+
+form div #username{
+    font-size: 1.15rem;
+}
+
+form div label{
+    display: block;
+    margin-bottom: 5px;
+    color: var(--neutralShade);
+}
+
+form div input{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid var(--neutralShade);
+    border-radius: 5px;
+    width: 90%;
+    display: block;
+    background: var(--lightContentBackground);
+    border: var(--other-content);
+    margin: auto;
+}
+
+form button{
+    width: 94%;
+    border-radius: 5px;
+    border: none;
+    margin: 5%;
+    height: 35px;
+    font-size: 1.3rem;
+    background-color: var(--background);
+    color: var(--neutralShade);
+}
+
+form button:hover{
+    color: var(--background);
+    background-color: var(--accentColor);
+}
+
+form a{
+    color: var(--neutralShade);
+    text-decoration: none;
+    margin: 3px;
+}
+
+form a:hover{
+    color: var(--background);
+}
+
+.bumalik{
+    padding: 10px;
+    border: 1px solid var(--neutralShade);
+    border-radius: 5px;
+    margin: 15px;
+    width: 15%;
+    display: block;
+    background: var(--lightContentBackground);
+    border: var(--other-content);
+    color: var(--text);
+    text-decoration: none;
+    text-align: center;
+}
+
+.bumalik:hover{
+    color: var(--background);
+    background-color: var(--other-content);
+}
+
+.for-otp{
+    display: flex;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.for-otp input{
+    margin-left: 5px;
+}

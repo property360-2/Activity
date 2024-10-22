@@ -1,0 +1,84 @@
+:root {
+    --background: #181C14;
+    --text: #ECDFCC;
+    --contentBackground: #3C3D37;
+    --other-content: #697565;
+    --neutralShade: #B0B3A1;
+    --lightContentBackground: #4B4D47;
+    --accentColor: #4CAF50;
+}
+
+body{
+    background-color: var(--background);
+    color: var(--accentColor);
+}
+
+.element-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+}
+
+.container {
+    text-align: center;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: var(--contentBackground);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    border: 1px solid var(--lightContentBackground);
+    color: var(--accentColor);
+    border-radius: 5px;
+}
+
+.square:hover {
+    background-color: var(--other-content);
+}
+
+.status {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: var(--text);
+    background-color: var(--contentBackground);
+}
+
+button:hover {
+    background-color: var(--accentColor);
+
+}
+
+a {
+    font-size: 1.5rem;
+    color: var(--accentColor);
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: var(--other-content);
+}
